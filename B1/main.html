@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+  <meta charset="UTF-8">
+  <title>管理首页</title>
+  <style>
+    .active {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+<div class="Top">SDCC</div>
+
+<div class="Left">
+  <div class="item dropdown" onclick="toggleSubMenu(event)">
+    商品
+    <div class="dropdown-content" id="subMenu">
+      <a class="Left-button" onclick="changePage(event, 'goods.php')">商品管理</a>
+      <a class="Left-button" onclick="changePage(event, 'class.php')">商品分类</a>
+      <a class="Left-button" onclick="changePage(event, 'brand.php')">商品品牌</a>
+      <a class="Left-button" onclick="changePage(event, 'specs.php')">商品规格</a>
+      <a class="Left-button" onclick="changePage(event, 'parameter.php')">商品参数</a>
+    </div>
+  </div>
+</div>
+
+<div class="Right">
+  <iframe class="Right-content" id="rightContent" src=""></iframe>
+</div>
+
+</body>
+
+</html>
+
